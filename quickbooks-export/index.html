@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>QuickBooks Export</title>
-  <link rel="stylesheet" href="styles.css?v=13">
+  <link rel="stylesheet" href="styles.css?v=14">
 </head>
 <body>
   <div class="app-wrapper">
@@ -209,12 +209,6 @@
         <!-- ===== ESTIMATE SEARCH PANEL ===== -->
         <div class="p-tabview-panel active" id="pane-search">
 
-          <!-- Search row -->
-          <div class="search-row">
-            <label class="search-label">Find Estimates to be marked for export:</label>
-            <!-- p-inputtext style -->
-            <input type="text" class="p-inputtext" placeholder="Type to search">
-          </div>
 
           <!-- Filter row: spread across full width like original -->
           <div class="filter-row">
@@ -290,6 +284,14 @@
               </div>
             </div>
 
+          </div>
+
+          <!-- Search above table -->
+          <div class="table-search-row">
+            <div class="table-search-input-wrap">
+              <svg class="table-search-icon" width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="6" cy="6" r="4.5" stroke="#888" stroke-width="1.4"/><line x1="9.5" y1="9.5" x2="13" y2="13" stroke="#888" stroke-width="1.4" stroke-linecap="round"/></svg>
+              <input type="text" class="p-inputtext table-search-input" placeholder="Search">
+            </div>
           </div>
 
           <!-- p-datatable style table -->

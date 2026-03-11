@@ -227,19 +227,6 @@ button { cursor: pointer; border: none; outline: none; font-family: inherit; }
 /* ===========================
    SEARCH ROW
    =========================== */
-.search-row {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  margin-bottom: 20px;
-}
-.search-label {
-  font-size: 13px;
-  font-weight: 600;
-  color: #333;
-  white-space: nowrap;
-}
-
 /* p-inputtext */
 .p-inputtext {
   width: 240px;
@@ -258,6 +245,24 @@ button { cursor: pointer; border: none; outline: none; font-family: inherit; }
   box-shadow: 0 0 0 3px rgba(13,110,253,0.1);
 }
 .p-inputtext::placeholder { color: #adb5bd; }
+
+.table-search-row {
+  margin-bottom: 8px;
+}
+.table-search-input-wrap {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+.table-search-icon {
+  position: absolute;
+  left: 8px;
+  pointer-events: none;
+}
+.table-search-input {
+  padding-left: 28px;
+  width: 220px;
+}
 
 /* ===========================
    FILTER ROW — spread full width like original
