@@ -247,10 +247,10 @@ button { cursor: pointer; border: none; outline: none; font-family: inherit; }
 
 .toolbar-row {
   display: flex;
-  align-items: center;
-  gap: 8px;
+  align-items: flex-end;
+  gap: 20px;
   margin-bottom: 14px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 .table-search-input-wrap {
   position: relative;
@@ -275,34 +275,33 @@ button { cursor: pointer; border: none; outline: none; font-family: inherit; }
   display: flex;
   flex-direction: column;
   gap: 0;
-  padding: 3px 10px;
-  border: 1px solid #dee2e6;
-  border-radius: 6px;
-  background: #fff;
+  padding: 2px 0 4px;
+  border: none;
+  border-bottom: 1px solid #ced4da;
+  border-radius: 0;
+  background: transparent;
   cursor: pointer;
-  transition: border-color 0.15s, background 0.15s;
+  transition: border-color 0.15s;
   white-space: nowrap;
+  min-width: 80px;
 }
 .filter-chip:hover {
-  border-color: #adb5bd;
-  background: #f8f9fa;
+  border-bottom-color: #495057;
 }
 .filter-chip-label {
-  font-size: 9.5px;
-  font-weight: 600;
-  color: #6c757d;
-  text-transform: uppercase;
-  letter-spacing: 0.3px;
+  font-size: 11px;
+  font-weight: 400;
+  color: #9ca3af;
   line-height: 1.3;
 }
 .filter-chip-value {
   display: flex;
   align-items: center;
   gap: 4px;
-  font-size: 12px;
-  font-weight: 500;
+  font-size: 13px;
+  font-weight: 400;
   color: #212529;
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
 /* p-dropdown */
