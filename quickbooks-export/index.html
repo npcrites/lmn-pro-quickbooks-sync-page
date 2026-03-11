@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>QuickBooks Export</title>
-  <link rel="stylesheet" href="styles.css?v=18">
+  <link rel="stylesheet" href="styles.css?v=19">
 </head>
 <body>
   <div class="app-wrapper">
@@ -210,78 +210,27 @@
         <div class="p-tabview-panel active" id="pane-search">
 
 
-          <!-- Filter row: spread across full width like original -->
+          <!-- Filter row: compact labeled dropdowns -->
           <div class="filter-row">
 
-            <!-- By Type -->
-            <div class="filter-col">
-              <div class="filter-col-label">By Type:</div>
-              <div class="filter-col-options">
-                <label class="p-radiobutton-label">
-                  <span class="p-radiobutton"><span class="p-radiobutton-box checked"><span class="p-radiobutton-icon"></span></span></span>
-                  <input type="radio" name="byType" checked style="display:none"> Both
-                </label>
-                <label class="p-radiobutton-label">
-                  <span class="p-radiobutton"><span class="p-radiobutton-box"><span class="p-radiobutton-icon"></span></span></span>
-                  <input type="radio" name="byType" style="display:none"> Standard
-                </label>
-                <label class="p-radiobutton-label">
-                  <span class="p-radiobutton"><span class="p-radiobutton-box"><span class="p-radiobutton-icon"></span></span></span>
-                  <input type="radio" name="byType" style="display:none"> Service
-                </label>
-              </div>
+            <div class="filter-chip">
+              <div class="filter-chip-label">By Type</div>
+              <div class="filter-chip-value">Both <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><polyline points="2,3 5,7 8,3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
             </div>
 
-            <!-- Status -->
-            <div class="filter-col">
-              <div class="filter-col-label">Status:</div>
-              <div class="filter-col-options">
-                <!-- p-dropdown style -->
-                <div class="p-dropdown">
-                  <span class="p-dropdown-label">All Statuses</span>
-                  <div class="p-dropdown-trigger">
-                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><polyline points="2,4 6,8 10,4" stroke="#666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                  </div>
-                </div>
-              </div>
+            <div class="filter-chip">
+              <div class="filter-chip-label">Status</div>
+              <div class="filter-chip-value">All Statuses <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><polyline points="2,3 5,7 8,3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
             </div>
 
-            <!-- By Date -->
-            <div class="filter-col">
-              <div class="filter-col-label">By Date:</div>
-              <div class="filter-col-options">
-                <label class="p-radiobutton-label">
-                  <span class="p-radiobutton"><span class="p-radiobutton-box checked"><span class="p-radiobutton-icon"></span></span></span>
-                  <input type="radio" name="byDate" checked style="display:none"> Last 3 months
-                </label>
-                <label class="p-radiobutton-label">
-                  <span class="p-radiobutton"><span class="p-radiobutton-box"><span class="p-radiobutton-icon"></span></span></span>
-                  <input type="radio" name="byDate" style="display:none"> Last 6 months
-                </label>
-                <label class="p-radiobutton-label">
-                  <span class="p-radiobutton"><span class="p-radiobutton-box"><span class="p-radiobutton-icon"></span></span></span>
-                  <input type="radio" name="byDate" style="display:none"> Last Year
-                </label>
-                <label class="p-radiobutton-label">
-                  <span class="p-radiobutton"><span class="p-radiobutton-box"><span class="p-radiobutton-icon"></span></span></span>
-                  <input type="radio" name="byDate" style="display:none"> Any Date
-                </label>
-              </div>
+            <div class="filter-chip">
+              <div class="filter-chip-label">By Date</div>
+              <div class="filter-chip-value">Last 3 months <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><polyline points="2,3 5,7 8,3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
             </div>
 
-            <!-- Previously Exported -->
-            <div class="filter-col">
-              <div class="filter-col-label">Previously Exported:</div>
-              <div class="filter-col-options">
-                <label class="p-radiobutton-label">
-                  <span class="p-radiobutton"><span class="p-radiobutton-box checked"><span class="p-radiobutton-icon"></span></span></span>
-                  <input type="radio" name="prevExp" checked style="display:none"> No
-                </label>
-                <label class="p-radiobutton-label">
-                  <span class="p-radiobutton"><span class="p-radiobutton-box"><span class="p-radiobutton-icon"></span></span></span>
-                  <input type="radio" name="prevExp" style="display:none"> Yes
-                </label>
-              </div>
+            <div class="filter-chip">
+              <div class="filter-chip-label">Previously Exported</div>
+              <div class="filter-chip-value">No <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><polyline points="2,3 5,7 8,3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
             </div>
 
           </div>

@@ -268,53 +268,44 @@ button { cursor: pointer; border: none; outline: none; font-family: inherit; }
    =========================== */
 .filter-row {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 16px;
-  margin-bottom: 24px;
-  padding: 0 4px;
-}
-
-.filter-col { display: flex; flex-direction: row; align-items: flex-start; gap: 10px; }
-.filter-col-label {
-  font-size: 13px;
-  font-weight: 700;
-  color: #333;
-  white-space: nowrap;
-  padding-top: 2px;
-}
-.filter-col-options { display: flex; flex-direction: column; gap: 7px; }
-
-/* p-radiobutton (PrimeNG style) */
-.p-radiobutton-label {
-  display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 13px;
-  color: #495057;
+  margin-bottom: 20px;
+  padding: 0 4px;
+  flex-wrap: wrap;
+}
+
+.filter-chip {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  padding: 6px 12px;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  background: #fff;
   cursor: pointer;
-  user-select: none;
+  transition: border-color 0.15s, background 0.15s;
+  white-space: nowrap;
 }
-.p-radiobutton { display: inline-flex; align-items: center; justify-content: center; }
-.p-radiobutton-box {
-  width: 18px; height: 18px;
-  border: 2px solid #ced4da;
-  border-radius: 50%;
-  background: #fff;
-  display: flex; align-items: center; justify-content: center;
-  transition: border-color 0.15s;
+.filter-chip:hover {
+  border-color: #adb5bd;
+  background: #f8f9fa;
 }
-.p-radiobutton-box.checked {
-  border-color: #2563eb;
-  background: #fff;
+.filter-chip-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: #6c757d;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
 }
-.p-radiobutton-icon {
-  width: 8px; height: 8px;
-  border-radius: 50%;
-  background: transparent;
-  transition: background 0.15s;
+.filter-chip-value {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #212529;
 }
-.p-radiobutton-box.checked .p-radiobutton-icon { background: #2563eb; }
 
 /* p-dropdown */
 .p-dropdown {
