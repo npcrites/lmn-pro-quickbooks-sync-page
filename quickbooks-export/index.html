@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>QuickBooks Export</title>
-  <link rel="stylesheet" href="styles.css?v=19">
+  <link rel="stylesheet" href="styles.css?v=20">
 </head>
 <body>
   <div class="app-wrapper">
@@ -210,8 +210,13 @@
         <div class="p-tabview-panel active" id="pane-search">
 
 
-          <!-- Filter row: compact labeled dropdowns -->
-          <div class="filter-row">
+          <!-- Toolbar: search + filters on same row -->
+          <div class="toolbar-row">
+
+            <div class="table-search-input-wrap">
+              <svg class="table-search-icon" width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="6" cy="6" r="4.5" stroke="#888" stroke-width="1.4"/><line x1="9.5" y1="9.5" x2="13" y2="13" stroke="#888" stroke-width="1.4" stroke-linecap="round"/></svg>
+              <input type="text" class="p-inputtext table-search-input" placeholder="Search">
+            </div>
 
             <div class="filter-chip">
               <div class="filter-chip-label">By Type</div>
@@ -233,14 +238,6 @@
               <div class="filter-chip-value">No <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><polyline points="2,3 5,7 8,3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
             </div>
 
-          </div>
-
-          <!-- Search above table -->
-          <div class="table-search-row">
-            <div class="table-search-input-wrap">
-              <svg class="table-search-icon" width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="6" cy="6" r="4.5" stroke="#888" stroke-width="1.4"/><line x1="9.5" y1="9.5" x2="13" y2="13" stroke="#888" stroke-width="1.4" stroke-linecap="round"/></svg>
-              <input type="text" class="p-inputtext table-search-input" placeholder="Search">
-            </div>
           </div>
 
           <!-- p-datatable style table -->

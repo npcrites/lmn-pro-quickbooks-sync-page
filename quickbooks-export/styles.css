@@ -245,8 +245,12 @@ button { cursor: pointer; border: none; outline: none; font-family: inherit; }
 }
 .p-inputtext::placeholder { color: #adb5bd; }
 
-.table-search-row {
+.toolbar-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   margin-bottom: 14px;
+  flex-wrap: wrap;
 }
 .table-search-input-wrap {
   position: relative;
@@ -266,14 +270,6 @@ button { cursor: pointer; border: none; outline: none; font-family: inherit; }
 /* ===========================
    FILTER ROW — spread full width like original
    =========================== */
-.filter-row {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-bottom: 20px;
-  padding: 0 4px;
-  flex-wrap: wrap;
-}
 
 .filter-chip {
   display: flex;
