@@ -185,7 +185,7 @@ button { cursor: pointer; border: none; outline: none; font-family: inherit; }
    p-tabView — pill/shaded style
    =========================== */
 .p-tabview-nav-wrapper {
-  background: #f0f2f5;
+  background: #fff;
   padding: 8px 12px;
   border-bottom: none;
 }
@@ -212,10 +212,10 @@ button { cursor: pointer; border: none; outline: none; font-family: inherit; }
   background: rgba(0,0,0,0.06);
 }
 .p-tabview-nav-item.active .p-tabview-nav-link {
-  color: #212529;
+  color: #1a7f4b;
   font-weight: 600;
-  background: #fff;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+  background: #e6f4ed;
+  box-shadow: none;
 }
 .p-tabview-title { pointer-events: none; }
 
